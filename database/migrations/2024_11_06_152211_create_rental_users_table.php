@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('rental_users', function (Blueprint $table) {
             $table->id();
             $table->foreignId('class_id')->constrained('classes');
-            $table->foreignId('house_section_id')->constrained();
+            $table->foreignId('house_sections_id')->constrained();
             $table->string('name');
             $table->string('email');
             $table->timestamps();

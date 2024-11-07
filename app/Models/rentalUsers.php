@@ -18,4 +18,13 @@ class rentalUsers extends Model
     'email'
   ];
 
+  public function class()
+  {
+      return $this->belongsTo(Classes::class, 'class_id');
+  }
+
+  public function HouseSection()
+  {
+      return $this->belongsTo(HouseSections::class, 'house_section_id');
+  }
 }

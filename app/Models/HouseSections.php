@@ -20,4 +20,9 @@ class HouseSections extends Model
     {
         return $this->belongsTo(Classes::class, 'class_id');
     }
+
+    public function rentalUsers()
+    {
+        return $this->hasMany(rentalUsers::class);
+    }
 }
