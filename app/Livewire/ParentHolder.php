@@ -15,6 +15,10 @@ class ParentHolder extends Component
     {
         $this->componentToRender = 'blog-cards';
     }
+    public function renderAddUserForm()
+    {
+        $this->componentToRender = 'add-user';
+    }
     public function renderUserTable()
     {
         $this->componentToRender = 'usertable';
